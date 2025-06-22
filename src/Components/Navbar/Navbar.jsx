@@ -1,6 +1,6 @@
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { NavLink } from "react-router";
-import Sidebar from "./SideBar";
+import Sidebar from "../Sidebar/Sidebar";
 import Button from "../Button/Button";
 import { LuDownload } from "react-icons/lu";
 import { useAppContext } from "../../../Context/Context";
