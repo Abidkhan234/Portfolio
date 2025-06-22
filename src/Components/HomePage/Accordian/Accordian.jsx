@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { GoPlus } from "react-icons/go";
-import { IoClose } from "react-icons/io5";
 import { useAppContext } from "../../../../Context/Context";
 import AOS from "aos";
 import "aos/dist/aos.css";

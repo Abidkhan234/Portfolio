@@ -1,5 +1,4 @@
-import { BsLinkedin } from "react-icons/bs";
-import { FaEnvelope, FaGithubSquare, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope,  FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { NavLink } from "react-router";
 import { useAppContext } from "../../../Context/Context";
