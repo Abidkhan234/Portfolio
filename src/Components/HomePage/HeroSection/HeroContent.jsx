@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { LuDownload } from "react-icons/lu";
 import Button from "../../Button/Button";
-import CV from "../../../../My-CV/New-CV.pdf";
+import CV from "../../../../.My-CV/New-CV.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

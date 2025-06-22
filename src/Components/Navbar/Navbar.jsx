@@ -4,7 +4,7 @@ import Sidebar from "./SideBar";
 import Button from "../Button/Button";
 import { LuDownload } from "react-icons/lu";
 import { useAppContext } from "../../../Context/Context";
-import CV from "../../../My-CV/New-CV.pdf";
+import CV from "../../../.My-CV/New-CV.pdf";
 
 const Navbar = () => {
   const { toggleBtn, setToggleBtn, navLinks } = useAppContext();
