@@ -1,12 +1,10 @@
 import Accordian from "../Components/HomePage/Accordian/Accordian";
 import SkillCards from "../Components/Card/SkillCards";
 import MyWork from "../Components/HomePage/MyWork/MyWork";
-import Sectionlayout from "../Components/SectionLayout/Sectionlayout";
+import Sectionlayout from "../Components/SectionLayout/SectionLayout";
 import HeroSectionLayout from "../Components/Layout/HeroSectionLayout/HeroSectionLayout";
 
-
 const HomePage = () => {
-
   const sectionDetail = [
     {
       title: "Creative Skills",

@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSectionLayout from "../Components/Layout/HeroSectionLayout/HeroSectionLayout";
 import SectionLayout from "../Components/SectionLayout/SectionLayout";
-import MyCareer from "../Components/AboutPage/MyCareer";
 import MyCareer2 from "../Components/AboutPage/MyCareer2";
 
 const AboutPage = () => {
