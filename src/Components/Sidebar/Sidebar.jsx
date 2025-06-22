@@ -29,6 +29,7 @@ const Sidebar = () => {
                     isActive ? "bg-[#fff]" : "bg-transparent"
                   } font-medium sm:text-lg text-base py-1.5 px-3 rounded-md text-[#333333]`
                 }
+                onClick={() => setToggleBtn(!toggleBtn)}
               >
                 {v.text}
               </NavLink>

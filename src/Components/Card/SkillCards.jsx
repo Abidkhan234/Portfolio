@@ -55,10 +55,10 @@ const SkillCards = () => {
           <div
             className="lg:col-span-4 md:col-span-6 col-span-12 rounded-md bg-[#F7F6F3] flex flex-col gap-3 py-7 lg:px-5 px-3 shadow-md text-center items-center"
             key={i}
-            data-aos-offset="120"
+            data-aos-offset="110"
             data-aos="fade-up"
             data-aos-duration="500"
-            data-aos-delay={`${(500 * i) / 2}`}
+            data-aos-delay={`${(500 * i) / 3}`}
             data-aos-easing="ease-in-out"
           >
             <div className="w-full flex justify-center items-center">
