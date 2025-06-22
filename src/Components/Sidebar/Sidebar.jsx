@@ -3,7 +3,6 @@ import { NavLink } from "react-router";
 import Button from "../Button/Button";
 import { LuDownload } from "react-icons/lu";
 import { useAppContext } from "../../../Context/Context";
-import CV from "../../../.My-CV/New-CV.pdf";
 
 const Sidebar = () => {
   const { toggleBtn, setToggleBtn, mediaIcons, navLinks } = useAppContext();
@@ -36,7 +35,7 @@ const Sidebar = () => {
             );
           })}
           <div>
-            <a href={CV} download="Abid-Khan-CV.pdf">
+            <a href={"../../../.My-CV/New-CV.pdf"} download="Abid-Khan-CV.pdf">
               <Button text={"CV"} icon={<LuDownload />} />
             </a>
           </div>

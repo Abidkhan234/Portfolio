@@ -3,7 +3,6 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { LuDownload } from "react-icons/lu";
 import Button from "../../Button/Button";
-import CV from "../../../../.My-CV/New-CV.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -78,7 +77,10 @@ const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
               data-aos-once="true"
               data-aos-offset="10"
             >
-              <a href={CV} download="Abid-Khan-CV.pdf">
+              <a
+                href={"../../../.My-CV/New-CV.pdf"}
+                download="Abid-Khan-CV.pdf"
+              >
                 <Button text={"CV"} icon={<LuDownload />} />
               </a>
               <NavLink to={"/projects"}>
