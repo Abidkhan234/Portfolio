@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { NavLink } from "react-router";
 import Sidebar from "./SideBar";
