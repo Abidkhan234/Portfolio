@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import Button from "../Button/Button";
 import { LuDownload } from "react-icons/lu";
 import { useAppContext } from "../../../Context/Context";
-import CV from "../../../.My-CV/New-CV.pdf";
+import CV from "../../../My-CV/New-CV.pdf";
 
 const Navbar = () => {
   const { toggleBtn, setToggleBtn, navLinks } = useAppContext();
@@ -51,7 +51,7 @@ const Navbar = () => {
             data-aos-delay={`${(500 * 4) / 2}`}
             data-aos-easing="ease-in-out"
           >
-            <a href={`${CV}`} download="Abid-Khan-CV.pdf">
+            <a href={CV} download="Abid-Khan-CV.pdf">
               <Button text={"CV"} icon={<LuDownload />} />
             </a>
           </div>

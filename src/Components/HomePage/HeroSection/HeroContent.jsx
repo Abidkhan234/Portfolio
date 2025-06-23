@@ -5,6 +5,7 @@ import { LuDownload } from "react-icons/lu";
 import Button from "../../Button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CV from '../../../../My-CV/New-CV.pdf'
 
 const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
   AOS.init();
@@ -78,7 +79,7 @@ const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
               data-aos-offset="10"
             >
               <a
-                href={"../../../../.My-CV/New-CV.pdf"}
+                href={CV}
                 download="Abid-Khan-CV.pdf"
               >
                 <Button text={"CV"} icon={<LuDownload />} />
