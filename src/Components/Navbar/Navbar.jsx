@@ -51,7 +51,7 @@ const Navbar = () => {
             data-aos-delay={`${(500 * 4) / 2}`}
             data-aos-easing="ease-in-out"
           >
-            <a href={CV} download="Abid-Khan-CV.pdf">
+            <a href={`${CV}`} download="Abid-Khan-CV.pdf">
               <Button text={"CV"} icon={<LuDownload />} />
             </a>
           </div>
