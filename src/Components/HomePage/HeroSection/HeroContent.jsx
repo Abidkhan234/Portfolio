@@ -5,7 +5,7 @@ import { LuDownload } from "react-icons/lu";
 import Button from "../../Button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CV from '../../../../My-CV/New-CV.pdf'
+import CV from '../../../../My-CV/Abid-khan-CV.pdf'
 
 const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
   AOS.init();
