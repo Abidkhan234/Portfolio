@@ -9,6 +9,7 @@ const HeroSectionLayout = ({
   headingText,
   text,
   isHomepage,
+  image,
 }) => {
   AOS.init();
 
@@ -31,7 +32,7 @@ const HeroSectionLayout = ({
         />
       </div>
       <div
-        className={`border-2 border-red-500 md:col-span-6 col-span-12  ${
+        className={`md:col-span-6 col-span-12  ${
           isHome ? "max-[767px]:order-1" : "order-1"
         }`}
         data-aos="fade-left"
@@ -39,7 +40,7 @@ const HeroSectionLayout = ({
         data-aos-delay={`${(500 * 2) / 2}`}
         data-aos-easing="ease-in-out"
       >
-        <HeroImage />
+        <HeroImage image={image} />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const MainLayout = () => {
       <>
         <Navbar />
       </>
-      <main className="sm:px-5 px-3.5 my-7 mt-14 pt-3">
+      <main className="sm:px-5 px-3.5 my-7 mt-14">
         <Outlet />
       </main>
       <footer

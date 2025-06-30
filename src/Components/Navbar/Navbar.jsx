@@ -5,13 +5,35 @@ import Button from "../Button/Button";
 import { LuDownload } from "react-icons/lu";
 import { useAppContext } from "../../../Context/Context";
 import CV from "../../../My-CV/Abid-khan-CV.pdf";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const { toggleBtn, setToggleBtn, navLinks } = useAppContext();
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (Math.abs(window.scrollY - lastScrollY.current) > 50) {
+        if (window.scrollY > lastScrollY.current) {
+          setShowNavbar(false);
+        } else {
+          setShowNavbar(true);
+        }
+        lastScrollY.current = window.scrollY;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
-      className={`w-full py-3 sm:px-5 px-3.5 fixed top-0 left-0 backdrop-blur-lg border-b-2 border-b-[#E1DBD1] bg-[#EBE7E0] z-50 md:overflow-hidden`}
+      className={`${
+        showNavbar ? "translate-y-0" : "-translate-y-16"
+      } w-full py-3 sm:px-5 px-3.5 fixed top-0 left-0 bg-[#EBE7E0] z-50 md:overflow-hidden transition-transform`}
     >
       <div className="flex justify-between items-center w-full">
         <div className="">

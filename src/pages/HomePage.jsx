@@ -4,6 +4,8 @@ import MyWork from "../Components/HomePage/MyWork/MyWork";
 import Sectionlayout from "../Components/SectionLayout/SectionLayout";
 import HeroSectionLayout from "../Components/Layout/HeroSectionLayout/HeroSectionLayout";
 
+import image from "../../public/image/HomePage/HeroSectionImage/FINAL ABID 2-01.png";
+
 const HomePage = () => {
   const sectionDetail = [
     {
@@ -35,7 +37,7 @@ const HomePage = () => {
 
   return (
     <section className="flex flex-col items-center gap-10">
-      <div className="w-full mt-3">
+      <div className="w-full">
         {heroContentDetail.map((v, i) => {
           return (
             <HeroSectionLayout
@@ -44,6 +46,7 @@ const HomePage = () => {
               headingText={v.headingText}
               text={v.text}
               isHomepage={v.isHomepage}
+              image={image}
               key={i}
             />
           );

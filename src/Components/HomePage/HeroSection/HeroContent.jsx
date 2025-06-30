@@ -5,7 +5,7 @@ import { LuDownload } from "react-icons/lu";
 import Button from "../../Button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CV from '../../../../My-CV/Abid-khan-CV.pdf'
+import CV from "../../../../My-CV/Abid-khan-CV.pdf";
 
 const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
   AOS.init();
@@ -26,8 +26,9 @@ const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
   }, [count]);
 
   return (
-    <div className="md:col-span-6  col-span-12 py-3 flex flex-col gap-2 max-[767px]:order-2 overflow-hidden">
-      <div className="flex justify-center md:justify-start items-center">
+    <div className="md:col-span-6  col-span-12 py-3 flex flex-col gap-2 max-[767px]:order-2 overflow-hidden h-full">
+      {/* <div className="flex justify-center h-full md:justify-start items-center"></div> */}
+      <div className="flex flex-col lg:gap-6 gap-5 md:items-start items-center h-full justify-center">
         <div
           className="bg-[#F5F3F0] px-2 py-1.5 rounded-md text-center"
           data-aos="fade-right"
@@ -39,8 +40,6 @@ const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
             {greetingText}
           </span>
         </div>
-      </div>
-      <div className="flex flex-col lg:gap-6 gap-5 md:items-start items-center">
         <div className="">
           <h1
             className={`${
@@ -78,10 +77,7 @@ const HeroContent = ({ greetingText, introText, aboutMeText, isHomePage }) => {
               data-aos-once="true"
               data-aos-offset="10"
             >
-              <a
-                href={CV}
-                download="Abid-Khan-CV.pdf"
-              >
+              <a href={CV} download="Abid-Khan-CV.pdf">
                 <Button text={"CV"} icon={<LuDownload />} />
               </a>
               <NavLink to={"/projects"}>

@@ -3,6 +3,8 @@ import HeroSectionLayout from "../Components/Layout/HeroSectionLayout/HeroSectio
 import SectionLayout from "../Components/SectionLayout/SectionLayout";
 import MyCareer2 from "../Components/AboutPage/MyCareer2";
 
+import image from "../../public/image/AboutPage/FINAL ABID-01.png";
+
 const AboutPage = () => {
   const heroContentDetail = [
     {
@@ -24,6 +26,7 @@ const AboutPage = () => {
               headingText={v.headingText}
               text={v.text}
               isHomepage={v.isHomepage}
+              image={image}
               key={i}
             />
           );
