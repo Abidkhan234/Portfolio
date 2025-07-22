@@ -12,9 +12,11 @@ import image4 from "../../public/image/ProjectPage/ProjectImages/Coffee Shop ima
 import image5 from "../../public/image/ProjectPage/ProjectImages/Furniro.PNG";
 import image6 from "../../public/image/ProjectPage/ProjectImages/Biccas-Clone.PNG";
 
-import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
+import fullStackImage from "../../public/image/ProjectPage/ProjectImages/full-stack-blog-image.PNG";
+
+import { IoLogoJavascript, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { FaCss3, FaHtml5 } from "react-icons/fa";
-import { SiReactrouter } from "react-icons/si";
+import { SiExpress, SiMongodb, SiReactrouter } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { AiFillApi } from "react-icons/ai";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -246,6 +248,36 @@ const ProjectPage = () => {
     },
   ];
 
+  const projectData3 = [
+    {
+      title: "FutureTech Blog",
+      image: fullStackImage,
+      link: "https://future-tech-iota.vercel.app",
+      iconArr: [
+        {
+          icon: <IoLogoReact />,
+          bgColor: "bg-blue-500",
+          textColor: "text-white",
+        },
+        {
+          icon: <IoLogoNodejs />,
+          bgColor: "bg-[#303030]",
+          textColor: "text-[#3c873a]",
+        },
+        {
+          icon: <SiExpress />,
+          bgColor: "bg-[#303030]",
+          textColor: "text-green-700",
+        },
+        {
+          icon: <SiMongodb />,
+          bgColor: "bg-[#303030]",
+          textColor: "text-green-700",
+        },
+      ],
+    },
+  ];
+
   const swiperBtns1 = [
     {
       isClass: "custom-swiper-next",
@@ -268,18 +300,36 @@ const ProjectPage = () => {
     },
   ];
 
+  const swiperBtns3 = [
+    {
+      isClass: "custom-swiper-next3",
+      icon: <IoIosArrowBack />,
+    },
+    {
+      isClass: "custom-swiper-prev3",
+      icon: <IoIosArrowForward />,
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-8">
       <div className="">
         <SectionLayout2
-          title={"Projects done in 2025"}
+          title={"Full Stack Projects"}
+          projectData={projectData3}
+          swiperBtn={swiperBtns3}
+        />
+      </div>
+      <div className="">
+        <SectionLayout2
+          title={"React Projects"}
           projectData={projectData1}
           swiperBtn={swiperBtns1}
         />
       </div>
       <div className="">
         <SectionLayout2
-          title={"Projects done in 2024"}
+          title={"HTML,CSS & JS Projects"}
           projectData={projectData2}
           swiperBtn={swiperBtns2}
         />
