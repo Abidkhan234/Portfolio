@@ -13,6 +13,7 @@ import image5 from "../../public/image/ProjectPage/ProjectImages/Furniro.PNG";
 import image6 from "../../public/image/ProjectPage/ProjectImages/Biccas-Clone.PNG";
 
 import fullStackImage from "../../public/image/ProjectPage/ProjectImages/full-stack-blog-image.PNG";
+import fullStackImage2 from "../../public/image/ProjectPage/ProjectImages/mern-auth-frontend-iota.vercel.app_home.png";
 
 import { IoLogoJavascript, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { FaCss3, FaHtml5 } from "react-icons/fa";
@@ -253,6 +254,33 @@ const ProjectPage = () => {
       title: "FutureTech Blog",
       image: fullStackImage,
       link: "https://future-tech-iota.vercel.app",
+      iconArr: [
+        {
+          icon: <IoLogoReact />,
+          bgColor: "bg-blue-500",
+          textColor: "text-white",
+        },
+        {
+          icon: <IoLogoNodejs />,
+          bgColor: "bg-[#303030]",
+          textColor: "text-[#3c873a]",
+        },
+        {
+          icon: <SiExpress />,
+          bgColor: "bg-[#303030]",
+          textColor: "text-green-700",
+        },
+        {
+          icon: <SiMongodb />,
+          bgColor: "bg-[#303030]",
+          textColor: "text-green-700",
+        },
+      ],
+    },
+    {
+      title: "MERN Auth",
+      image: fullStackImage2,
+      link: "https://mern-auth-frontend-iota.vercel.app",
       iconArr: [
         {
           icon: <IoLogoReact />,
